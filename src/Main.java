@@ -4,7 +4,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class LoginScreen extends Application {
+public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
@@ -12,7 +12,7 @@ public class LoginScreen extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/controllers/login_screen.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/loginScreen/login_screen.fxml"));
         primaryStage.setTitle("SQL Passport");
         primaryStage.setResizable(false);
         primaryStage.setScene(new Scene(root));
